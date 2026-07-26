@@ -6,57 +6,69 @@ Oyun geliştirme sürecinde ilerlemeyi ölçmek ve doğru kararlar almak için k
 
 Sprint içinde kalan iş miktarını gün gün gösteren grafiktir.
 
-- **İdeal çizgi:** İşlerin eşit şekilde biteceği varsayılan yol
-- **Gerçek çizgi:** Gerçekte kalan iş miktarı
+**Örnek:**
+- Sprint başında 40 Story Point iş var.
+- İdeal çizgi her gün eşit şekilde azalarak 0’a iner.
+- 5. günde hâlâ 28 Story Point kaldıysa takım geride demektir.
 
 **Ne işe yarar?**
-- Takım planlandığı gibi ilerliyor mu hemen görülür
-- Geride kalınıyorsa erken müdahale edilir
+- Takım planlandığı gibi ilerliyor mu hemen görülür.
 
 ## 2. Velocity (Hız)
 
 Takımın bir sprintte ortalama ne kadar iş bitirdiğini gösterir.
 
-- Genellikle **Story Point** cinsinden ölçülür
-- Son 3-5 sprintin ortalaması alınır
+**Örnek:**
+- Sprint 1 → 32 Story Point
+- Sprint 2 → 28 Story Point
+- Sprint 3 → 35 Story Point
+- Ortalama Velocity ≈ 32 Story Point
 
 **Ne işe yarar?**
-- Gelecek sprintlerin daha gerçekçi planlanmasını sağlar
+- Gelecek sprintte “Biz yaklaşık 30-35 Story Point iş alabiliriz” diye plan yapılır.
 
 ## 3. Cycle Time
 
 Bir işin “In Progress” durumundan “Done” durumuna gelene kadar geçen süredir.
 
-**Ne işe yarar?**
-- İşlerin ne kadar hızlı tamamlandığını gösterir
-- Darboğazları tespit etmeye yardımcı olur
+**Örnek:**
+- “Günlük giriş ödülü” feature’ı 4 gün sürdü.
+- “Yeni karakter ekleme” 11 gün sürdü.
+- Ortalama Cycle Time 6-7 gün çıkıyorsa süreç yavaş demektir.
 
 ## 4. Lead Time
 
 Bir işin backlog’a eklendiği andan tamamlanana kadar geçen toplam süredir.
 
-**Ne işe yarar?**
-- Fikirden canlıya çıkış süresini ölçer
+**Örnek:**
+- Bir fikir 12 Mart’ta backlog’a eklendi.
+- 5 Nisan’da canlıya çıktı.
+- Lead Time = 24 gün
 
 ## 5. Throughput
 
-Belirli bir sürede tamamlanan iş sayısıdır (örneğin haftada kaç User Story bitti).
+Belirli bir sürede tamamlanan iş sayısıdır.
+
+**Örnek:**
+- Son 2 haftada 9 User Story tamamlandı.
+- Haftalık Throughput = 4.5 User Story
 
 ## 6. Sprint Goal Success Rate
 
 Sprint hedefinin ne kadar başarıldığını gösterir.
 
-- %100’e yakın olması idealdir
-- Sürekli düşükse planlama veya kapasite problemi vardır
+**Örnek:**
+- Son 6 sprintten 5’inde Sprint Goal tamamen başarıldı.
+- Success Rate = %83
 
 ## Oyun Sektöründe Özellikle Takip Edilenler
 
 - Feature’ların canlıya çıkış süresi
 - Live Ops event’lerinin hazırlanma süresi
-- Bug’ların çözülme süresi
+- Bug’ların çözülme süresi (özellikle major bug’lar)
 - Oyuncu feedback’ine göre yapılan değişikliklerin hızı
 
-## Business Analyst Olarak Rol
+## Business Analyst Olarak Senin Rolün
 
 - Metrikleri düzenli takip etmek
 - Anlamlı raporlar hazırlamak
